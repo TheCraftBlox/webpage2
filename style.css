@@ -1,0 +1,27 @@
+body {
+  background-color: lightblue;
+}
+table{
+border-style: dotted dashed solid double;
+}
+
+h1 {
+  color: pink;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+p {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+form{
+  max-width: 300px;
+  border-style:dashed;
+  text-align: center;
+  }
+}
+
+//js to popup appear on submit 
+//js to check all fields are loaded

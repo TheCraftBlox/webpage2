@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>page2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Welcome to the second page!</h1>
+<h5>Curabitur ac purus sed nisi ultrices ultrices?</h5>
+ <table>
+  <tr>
+    <th><b>ultrices:</b></th>
+    <th><b>purus:</b></th>
+    <th><b>Curabitur:</b>
+	</tr>
+	<tr>
+	<td>Lorem ipsum dolor sit amet</td>
+    <td>consectetur adipiscing elit</td>
+    <td>Ut faucibus rhoncus lacus at mattis</td>
+	</tr>
+	<tr>
+	<td>Duis tristique ut augue eu ornare</td>
+    <td>Vestibulum condimentum, velit ac iaculis dapibus</td>
+    <td>sed porttitor felis neque ut massa</td>
+  </tr>
+</table> 
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla, sem nec blandit molestie, lacus turpis molestie lectus, vitae ultricies lorem quam sit amet orci. Nulla facilisi. Maecenas tempor, nibh a lacinia lobortis, neque libero viverra ex, quis faucibus odio nisi sit amet nisl. Nulla vitae nulla eget magna accumsan viverra non ut turpis. Curabitur orci magna, interdum sit amet ante ac, congue aliquet mauris. Nulla facilisi. Proin condimentum ut tortor a fermentum. Donec aliquam purus ut tincidunt lobortis. Vestibulum volutpat nisi at nunc rutrum accumsan. Morbi maximus pharetra turpis ac tincidunt. Sed vehicula turpis sit amet massa fringilla, in imperdiet sapien placerat. Vivamus tincidunt mauris ac volutpat finibus. Sed erat tellus, volutpat sed quam in, aliquam scelerisque odio. Donec faucibus dui ut vestibulum semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur sed sem eu erat tempus facilisis quis ac augue.
+
+Maecenas id massa efficitur, lacinia augue in, vehicula mi. Phasellus in ante eu ligula molestie maximus non nec eros. Nam bibendum mauris sit amet rutrum laoreet. Donec pellentesque semper turpis, vitae pellentesque est pharetra nec. Sed accumsan, enim at feugiat laoreet, lacus elit lacinia est, tincidunt ultrices libero est id purus. Aliquam eget ante luctus, pretium turpis ac, commodo lectus. Proin pulvinar convallis libero, in sodales dui ultricies nec. Morbi sit amet vulputate felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sed dui leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </p>
+<br>
+<form onsubmit="buttonpress(); return false;">
+ <label for="name">Porro Quisquam:</label><br>
+<input type="text" id= "name"> <br>
+<input type="checkbox" id="checkbox1"> 
+<label>Mauris finibus euismod magna</label><br>
+<input type="checkbox" id="checkbox2"> 
+<label>Lacinia augue euismod magna</label><br>
+<input type="submit"> 
+</form>
+<br>
+
+<a href= "index.html">
+<p>Visit the prev page
+<img src = "hand.png" width = 64px height = 64px>
+</p>
+</a>
+
+</body>
+
+<script>
+
+function buttonpress()
+{
+    var checkbox1 = document.getElementById('checkbox1');
+	var checkbox2 = document.getElementById('checkbox2');
+    var text = document.getElementById('name').value;
+
+    if( (!(checkbox1.checked || checkbox2.checked)) || (text.length ==0)){
+        window.alert("please fill in the form.");
+        return false;
+    }
+	else{
+    window.alert("yeah!");}
+	
+    return false;
+}
+</script>
+
+</html> 
